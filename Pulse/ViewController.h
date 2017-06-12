@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AppDelegate.h"
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController<NSURLSessionDataDelegate,NSURLSessionTaskDelegate>
+@property (weak, nonatomic) IBOutlet UITextField *userName;
+@property (weak, nonatomic) IBOutlet UITextField *passWord;
+- (IBAction)loginButton:(id)sender;
+- (IBAction)createAccountButton:(id)sender;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+- (IBAction)forgotPassword:(id)sender;
 
 @end
 

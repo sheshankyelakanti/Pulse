@@ -11,7 +11,18 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property NSMutableDictionary * reqDict;
+@property NSArray * userDict;
+@property NSMutableArray * summaryData;
 
-
+@property NSMutableArray * dayCount;
+@property NSMutableArray * date;
+@property NSMutableArray * day;
+@property NSMutableArray * checkIn;
+@property NSMutableArray * checkOut;
+@property NSMutableArray * timeSpent;
+@property NSMutableArray * spentSummary;
+@property NSMutableArray * points;
+@property NSMutableArray * dayType;
 @end
 

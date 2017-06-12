@@ -7,25 +7,68 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F0A9C391EE949BE00BB688C /* AttendenceDetailsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0A9C381EE949BE00BB688C /* AttendenceDetailsCell.m */; };
+		3F0A9C401EE9765800BB688C /* CreateRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0A9C3F1EE9765800BB688C /* CreateRequest.m */; };
+		3F36E6D81EE7BE61006B5009 /* AttendenceDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F36E6D71EE7BE61006B5009 /* AttendenceDetails.m */; };
 		3F3822441EE5893F0084813B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3822431EE5893F0084813B /* main.m */; };
 		3F3822471EE5893F0084813B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3822461EE5893F0084813B /* AppDelegate.m */; };
 		3F38224A1EE5893F0084813B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3822491EE5893F0084813B /* ViewController.m */; };
-		3F38224D1EE5893F0084813B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F38224B1EE5893F0084813B /* Main.storyboard */; };
 		3F38224F1EE5893F0084813B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F38224E1EE5893F0084813B /* Assets.xcassets */; };
 		3F3822521EE5893F0084813B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3822501EE5893F0084813B /* LaunchScreen.storyboard */; };
+		3F38225B1EE589650084813B /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F38225A1EE589650084813B /* SWRevealViewController.m */; };
+		3F38225E1EE589F90084813B /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F38225D1EE589F90084813B /* TableViewController.m */; };
+		3F3822601EE59F750084813B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F38225F1EE59F750084813B /* Main.storyboard */; };
+		3F3F2C4D1EE66D1500E7E8EB /* updates.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3F2C4C1EE66D1500E7E8EB /* updates.m */; };
+		3F3F2C501EE6734500E7E8EB /* Attendence.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3F2C4F1EE6734500E7E8EB /* Attendence.m */; };
+		3F3F2C531EE6737900E7E8EB /* Leaves.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3F2C521EE6737900E7E8EB /* Leaves.m */; };
+		3F3F2C591EE6771700E7E8EB /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3F2C581EE6771700E7E8EB /* Home.m */; };
+		3F3F2C5E1EE681CC00E7E8EB /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3F2C5D1EE681CC00E7E8EB /* CustomCell.m */; };
+		3F3F2C861EE6E39800E7E8EB /* AttendanceCustom.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3F2C851EE6E39800E7E8EB /* AttendanceCustom.m */; };
+		3F3F2C891EE6EE6E00E7E8EB /* CreateAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F3F2C881EE6EE6E00E7E8EB /* CreateAccount.m */; };
+		3F7FCF711EEBB10D00A679D8 /* logo-big.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F7FCF701EEBB10D00A679D8 /* logo-big.png */; };
+		3F7FCF741EEBB5E900A679D8 /* ForgotPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F7FCF731EEBB5E900A679D8 /* ForgotPassword.m */; };
+		3F7FCF761EEBBE6C00A679D8 /* Attendance.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F7FCF751EEBBE6C00A679D8 /* Attendance.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F0A9C371EE949BE00BB688C /* AttendenceDetailsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttendenceDetailsCell.h; sourceTree = "<group>"; };
+		3F0A9C381EE949BE00BB688C /* AttendenceDetailsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttendenceDetailsCell.m; sourceTree = "<group>"; };
+		3F0A9C3E1EE9765800BB688C /* CreateRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateRequest.h; sourceTree = "<group>"; };
+		3F0A9C3F1EE9765800BB688C /* CreateRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateRequest.m; sourceTree = "<group>"; };
+		3F36E6D61EE7BE61006B5009 /* AttendenceDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttendenceDetails.h; sourceTree = "<group>"; };
+		3F36E6D71EE7BE61006B5009 /* AttendenceDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttendenceDetails.m; sourceTree = "<group>"; };
 		3F38223F1EE5893F0084813B /* Pulse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pulse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F3822431EE5893F0084813B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3F3822451EE5893F0084813B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3F3822461EE5893F0084813B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3F3822481EE5893F0084813B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3F3822491EE5893F0084813B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		3F38224C1EE5893F0084813B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F38224E1EE5893F0084813B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F3822511EE5893F0084813B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F3822531EE5893F0084813B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F3822591EE589640084813B /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		3F38225A1EE589650084813B /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		3F38225C1EE589F90084813B /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		3F38225D1EE589F90084813B /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		3F38225F1EE59F750084813B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		3F3F2C4B1EE66D1500E7E8EB /* updates.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = updates.h; sourceTree = "<group>"; };
+		3F3F2C4C1EE66D1500E7E8EB /* updates.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = updates.m; sourceTree = "<group>"; };
+		3F3F2C4E1EE6734500E7E8EB /* Attendence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attendence.h; sourceTree = "<group>"; };
+		3F3F2C4F1EE6734500E7E8EB /* Attendence.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Attendence.m; sourceTree = "<group>"; };
+		3F3F2C511EE6737900E7E8EB /* Leaves.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Leaves.h; sourceTree = "<group>"; };
+		3F3F2C521EE6737900E7E8EB /* Leaves.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Leaves.m; sourceTree = "<group>"; };
+		3F3F2C571EE6771700E7E8EB /* Home.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
+		3F3F2C581EE6771700E7E8EB /* Home.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Home.m; sourceTree = "<group>"; };
+		3F3F2C5C1EE681CC00E7E8EB /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		3F3F2C5D1EE681CC00E7E8EB /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
+		3F3F2C841EE6E39800E7E8EB /* AttendanceCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttendanceCustom.h; sourceTree = "<group>"; };
+		3F3F2C851EE6E39800E7E8EB /* AttendanceCustom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttendanceCustom.m; sourceTree = "<group>"; };
+		3F3F2C871EE6EE6E00E7E8EB /* CreateAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAccount.h; sourceTree = "<group>"; };
+		3F3F2C881EE6EE6E00E7E8EB /* CreateAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateAccount.m; sourceTree = "<group>"; };
+		3F7FCF701EEBB10D00A679D8 /* logo-big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-big.png"; sourceTree = "<group>"; };
+		3F7FCF721EEBB5E900A679D8 /* ForgotPassword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgotPassword.h; sourceTree = "<group>"; };
+		3F7FCF731EEBB5E900A679D8 /* ForgotPassword.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgotPassword.m; sourceTree = "<group>"; };
+		3F7FCF751EEBBE6C00A679D8 /* Attendance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Attendance.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +87,8 @@
 			children = (
 				3F3822411EE5893F0084813B /* Pulse */,
 				3F3822401EE5893F0084813B /* Products */,
+				3F3822591EE589640084813B /* SWRevealViewController.h */,
+				3F38225A1EE589650084813B /* SWRevealViewController.m */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,10 +107,36 @@
 				3F3822461EE5893F0084813B /* AppDelegate.m */,
 				3F3822481EE5893F0084813B /* ViewController.h */,
 				3F3822491EE5893F0084813B /* ViewController.m */,
-				3F38224B1EE5893F0084813B /* Main.storyboard */,
+				3F38225C1EE589F90084813B /* TableViewController.h */,
+				3F38225D1EE589F90084813B /* TableViewController.m */,
+				3F3F2C571EE6771700E7E8EB /* Home.h */,
+				3F3F2C581EE6771700E7E8EB /* Home.m */,
+				3F3F2C4E1EE6734500E7E8EB /* Attendence.h */,
+				3F3F2C4F1EE6734500E7E8EB /* Attendence.m */,
+				3F3F2C841EE6E39800E7E8EB /* AttendanceCustom.h */,
+				3F3F2C851EE6E39800E7E8EB /* AttendanceCustom.m */,
+				3F3F2C4B1EE66D1500E7E8EB /* updates.h */,
+				3F3F2C4C1EE66D1500E7E8EB /* updates.m */,
+				3F3F2C511EE6737900E7E8EB /* Leaves.h */,
+				3F3F2C521EE6737900E7E8EB /* Leaves.m */,
+				3F3F2C5C1EE681CC00E7E8EB /* CustomCell.h */,
+				3F3F2C5D1EE681CC00E7E8EB /* CustomCell.m */,
+				3F3F2C871EE6EE6E00E7E8EB /* CreateAccount.h */,
+				3F3F2C881EE6EE6E00E7E8EB /* CreateAccount.m */,
+				3F36E6D61EE7BE61006B5009 /* AttendenceDetails.h */,
+				3F36E6D71EE7BE61006B5009 /* AttendenceDetails.m */,
+				3F0A9C371EE949BE00BB688C /* AttendenceDetailsCell.h */,
+				3F0A9C381EE949BE00BB688C /* AttendenceDetailsCell.m */,
+				3F0A9C3E1EE9765800BB688C /* CreateRequest.h */,
+				3F0A9C3F1EE9765800BB688C /* CreateRequest.m */,
+				3F7FCF721EEBB5E900A679D8 /* ForgotPassword.h */,
+				3F7FCF731EEBB5E900A679D8 /* ForgotPassword.m */,
+				3F38225F1EE59F750084813B /* Main.storyboard */,
 				3F38224E1EE5893F0084813B /* Assets.xcassets */,
 				3F3822501EE5893F0084813B /* LaunchScreen.storyboard */,
+				3F7FCF751EEBBE6C00A679D8 /* Attendance.png */,
 				3F3822531EE5893F0084813B /* Info.plist */,
+				3F7FCF701EEBB10D00A679D8 /* logo-big.png */,
 				3F3822421EE5893F0084813B /* Supporting Files */,
 			);
 			path = Pulse;
@@ -137,9 +208,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F7FCF711EEBB10D00A679D8 /* logo-big.png in Resources */,
+				3F3822601EE59F750084813B /* Main.storyboard in Resources */,
 				3F3822521EE5893F0084813B /* LaunchScreen.storyboard in Resources */,
 				3F38224F1EE5893F0084813B /* Assets.xcassets in Resources */,
-				3F38224D1EE5893F0084813B /* Main.storyboard in Resources */,
+				3F7FCF761EEBBE6C00A679D8 /* Attendance.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,23 +223,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F3F2C591EE6771700E7E8EB /* Home.m in Sources */,
+				3F3F2C4D1EE66D1500E7E8EB /* updates.m in Sources */,
+				3F3F2C5E1EE681CC00E7E8EB /* CustomCell.m in Sources */,
+				3F3F2C501EE6734500E7E8EB /* Attendence.m in Sources */,
 				3F38224A1EE5893F0084813B /* ViewController.m in Sources */,
+				3F3F2C891EE6EE6E00E7E8EB /* CreateAccount.m in Sources */,
+				3F3F2C531EE6737900E7E8EB /* Leaves.m in Sources */,
+				3F0A9C401EE9765800BB688C /* CreateRequest.m in Sources */,
+				3F0A9C391EE949BE00BB688C /* AttendenceDetailsCell.m in Sources */,
+				3F36E6D81EE7BE61006B5009 /* AttendenceDetails.m in Sources */,
 				3F3822471EE5893F0084813B /* AppDelegate.m in Sources */,
+				3F3F2C861EE6E39800E7E8EB /* AttendanceCustom.m in Sources */,
 				3F3822441EE5893F0084813B /* main.m in Sources */,
+				3F38225E1EE589F90084813B /* TableViewController.m in Sources */,
+				3F38225B1EE589650084813B /* SWRevealViewController.m in Sources */,
+				3F7FCF741EEBB5E900A679D8 /* ForgotPassword.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3F38224B1EE5893F0084813B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3F38224C1EE5893F0084813B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3F3822501EE5893F0084813B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -307,6 +385,7 @@
 				3F3822581EE5893F0084813B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
