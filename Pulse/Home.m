@@ -17,7 +17,7 @@
 @implementation Home
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
+    [super viewDidLoad];        
     [self createData];
     SWRevealViewController *revealViewController = self.revealViewController;
     if ( revealViewController )

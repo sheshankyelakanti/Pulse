@@ -14,4 +14,5 @@
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
+@property (strong,nonatomic) NSIndexPath * expandPath;
 @end

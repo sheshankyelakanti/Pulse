@@ -63,7 +63,7 @@
                 {
                     NSLog(@"Got Responce From Server");
                     AD.reqDict = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
-                    NSLog(@"dict ** %@",AD.reqDict);
+                    NSLog(@"dict ** %@",AD.userDict);
                 dispatch_sync(dispatch_get_main_queue(), ^{
                    self.nineText.text=@"";
                     self.tenText.text=@"";
@@ -77,6 +77,8 @@
                     self.leftText.text=@"";
                 });
     }];
+    [dataTask resume];
+
     if ([self.nineText.text isEqualToString:@""]||[self.tenText.text isEqualToString:@""]||[self.elevenText.text isEqualToString:@""]||[self.twelveText.text isEqualToString:@""]||[self.oneText.text isEqualToString:@""]||[self.twoText.text isEqualToString:@""]||[self.threeText.text isEqualToString:@""]||[self.fourText.text isEqualToString:@""]||[self.fiveText.text isEqualToString:@""]||[self.leftText.text isEqualToString:@""])
     {
         UIAlertController * alert =[UIAlertController alertControllerWithTitle:@"sorry" message:@"enter Details" preferredStyle:UIAlertControllerStyleAlert];
@@ -86,6 +88,5 @@
         [alert addAction:ok];
         [self presentViewController:alert animated:YES completion:nil];
     }
-   [dataTask resume];
 }
 @end

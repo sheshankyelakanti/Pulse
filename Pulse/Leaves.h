@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Leaves : UIViewController<UIPickerViewDelegate,UIPickerViewDataSource>
+@interface Leaves : UIViewController<UIPickerViewDelegate,UIPickerViewDataSource,UITextFieldDelegate,NSURLSessionDataDelegate,NSURLSessionTaskDelegate>
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *menuButton;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -16,6 +16,8 @@
 @property (weak, nonatomic) IBOutlet UIDatePicker *from;
 @property (weak, nonatomic) IBOutlet UIDatePicker *to;
 @property (weak, nonatomic) IBOutlet UITextField *leaveText;
+@property (weak, nonatomic) IBOutlet UITextView *descriptionForLeave;
+- (IBAction)applyLeave:(id)sender;
 
 
 

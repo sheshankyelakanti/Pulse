@@ -7,10 +7,13 @@
 //
 
 #import "CreateAccount.h"
-
+#import "AppDelegate.h"
 @interface CreateAccount ()
 {
     NSArray * gender;
+    NSURLSession * session;
+    NSMutableURLRequest * URLReq;
+    NSURLSessionDataTask * dataTask;
 }
 @end
 
@@ -68,15 +71,36 @@
 
 - (IBAction)submit:(id)sender
 {
-    NSLog(@"%@",self.userName.text);
-    NSLog(@"%@",self.lastName.text);
-    NSLog(@"%@",self.chooseGender.text);
-    NSLog(@"%@",self.mobileNo.text);
-    NSLog(@"%@",self.city.text);
-    NSLog(@"%@",self.chooseState.text);
-    NSLog(@"%@",self.email.text);
-    NSLog(@"%@",self.password.text);
-    NSLog(@"%@",self.retypePassword.text);
+    AppDelegate * AD = (AppDelegate *)[[UIApplication sharedApplication]delegate];
+    AD.reqDict = [[NSMutableDictionary alloc]init];
+    session = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration defaultSessionConfiguration]];
+    
+    URLReq = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://www.brninfotech.com/pulse/modules/admin/ValidateLogin.php"]];
+    
+    NSString * dataInStr = [NSString stringWithFormat:@"firstName=%@&lastName=%@&gender=%@&mobileNum=%@&city=%@&state=%@&email=%@&password=%@&funcName=registerUser",self.userName.text,self.lastName.text,self.chooseGender.text,self.mobileNo.text,self.city.text,self.chooseState.text,self.email.text,self.password.text];
+    
+    [URLReq setValue:@"application/x-www-form-urlencoded; charset=utf-8" forHTTPHeaderField:@"Content-Type"];
+    
+    NSData * dataToPassServer = [dataInStr dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
+    
+    NSString * postLength = [NSString stringWithFormat:@"%lu",(unsigned long)[dataToPassServer length]];
+    
+    [URLReq setValue:postLength forHTTPHeaderField:@"Content-Length"];
+    
+    [URLReq setHTTPBody:dataToPassServer];
+    
+    URLReq.HTTPMethod = @"POST";
+    
+    dataTask = [session dataTaskWithRequest:URLReq completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error)
+                {
+                    NSLog(@"Got Responce From Server");
+                    AD.reqDict = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+                    NSLog(@"dict ** %@",AD.userDict);
+                    dispatch_sync(dispatch_get_main_queue(), ^{
+                        
+                    });
+                    
+                }];
     
     if ([self.userName.text isEqualToString:@""]||[self.lastName.text isEqualToString:@""]||[self.chooseGender.text isEqualToString:@""]||[self.mobileNo.text isEqualToString:@""]||[self.city.text isEqualToString:@""]||[self.chooseState.text isEqualToString:@""]||[self.email.text isEqualToString:@""]||[self.password.text isEqualToString:@""]||[self.retypePassword.text isEqualToString:@""])
     {

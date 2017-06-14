@@ -114,7 +114,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uwl-dQ-QkG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-311" y="-1206"/>
+            <point key="canvasLocation" x="-515" y="-246"/>
         </scene>
         <!--Create Account-->
         <scene sceneID="gpR-SA-LoM">
@@ -292,7 +292,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tnh-U2-tGM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="377" y="-1207"/>
+            <point key="canvasLocation" x="196" y="-247"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -314,7 +314,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1207" y="377"/>
+            <point key="canvasLocation" x="-108" y="499"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="Gjc-xE-vQP">
@@ -418,7 +418,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9UH-4e-0KS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="588" y="376"/>
+            <point key="canvasLocation" x="620" y="499"/>
         </scene>
         <!--Leaves-->
         <scene sceneID="7vN-Yh-7p6">
@@ -466,9 +466,9 @@
                                                         <color key="backgroundColor" red="0.52601522842639592" green="0.26583712440339835" blue="0.48527607870128109" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Leave Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxj-JA-zfZ">
-                                                        <rect key="frame" x="14" y="67" width="92" height="21"/>
+                                                        <rect key="frame" x="14" y="67" width="74" height="21"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -523,6 +523,7 @@ Apply Leave(s)</string>
                                                         <rect key="frame" x="151" y="341" width="218" height="108"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
@@ -541,6 +542,9 @@ Apply Leave(s)</string>
                                                         <state key="normal" title="Apply Leave">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="applyLeave:" destination="ca8-iA-wvw" eventType="touchUpInside" id="Iu1-ns-orL"/>
+                                                        </connections>
                                                     </button>
                                                     <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="EH2-0t-zCT">
                                                         <rect key="frame" x="97" y="252" width="263" height="52"/>
@@ -558,20 +562,13 @@ Apply Leave(s)</string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="57C-Kb-xHh">
-                                                        <rect key="frame" x="112" y="100" width="233" height="59"/>
+                                                        <rect key="frame" x="89" y="94" width="209" height="59"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                         <connections>
                                                             <outlet property="dataSource" destination="ca8-iA-wvw" id="hVl-BV-dj5"/>
                                                             <outlet property="delegate" destination="ca8-iA-wvw" id="LlR-VW-59X"/>
                                                         </connections>
                                                     </pickerView>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D4Z-93-6PF">
-                                                        <rect key="frame" x="124" y="62" width="245" height="30"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <nil key="textColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Leave Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8t-92-0vp">
                                                         <rect key="frame" x="33" y="161" width="90" height="29"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -580,6 +577,16 @@ Apply Leave(s)</string>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D4Z-93-6PF">
+                                                        <rect key="frame" x="115" y="58" width="218" height="30"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="ca8-iA-wvw" id="n1O-gQ-xbS"/>
+                                                        </connections>
+                                                    </textField>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                 <color key="tintColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -596,6 +603,7 @@ Apply Leave(s)</string>
                         <barButtonItem key="leftBarButtonItem" title="menu" id="xF1-Fx-244"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="descriptionForLeave" destination="Q64-kh-QR9" id="CBh-LM-Asw"/>
                         <outlet property="from" destination="753-50-Bdp" id="g3L-Oe-7Vi"/>
                         <outlet property="leaveText" destination="D4Z-93-6PF" id="6kT-Ju-FJK"/>
                         <outlet property="menuButton" destination="xF1-Fx-244" id="Ei5-95-vOJ"/>
@@ -606,7 +614,7 @@ Apply Leave(s)</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ddb-m4-twc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2494" y="2128"/>
+            <point key="canvasLocation" x="2494" y="2009"/>
         </scene>
         <!--Create Request-->
         <scene sceneID="SmK-Fr-Vhl">
@@ -631,66 +639,6 @@ Apply Leave(s)</string>
                                 <rect key="frame" x="0.0" y="109" width="426" height="610"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mhf-As-xs6">
-                                        <rect key="frame" x="0.0" y="-43" width="431" height="702"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Request Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVB-IM-S6t">
-                                                <rect key="frame" x="6" y="121" width="86" height="26"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Seat num" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIf-ld-kYm">
-                                                <rect key="frame" x="14" y="300" width="58" height="26"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please discribe in detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2AC-zt-8lA">
-                                                <rect key="frame" x="94" y="531" width="154" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JQr-pL-qEz">
-                                                <rect key="frame" x="94" y="395" width="240" height="128"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kih-R0-apg">
-                                                <rect key="frame" x="109" y="565" width="63" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.17977100599977083" green="0.64756503807106602" blue="0.6395601625733166" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <state key="normal" title="Submit">
-                                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="submitButton:" destination="2Ym-2B-cgS" eventType="touchUpInside" id="gP1-H1-0h4"/>
-                                                </connections>
-                                            </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6I7-9A-RwA">
-                                                <rect key="frame" x="14" y="445" width="70" height="29"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LabID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erH-ul-1bk">
-                                                <rect key="frame" x="21" y="205" width="45" height="28"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                    </scrollView>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lOJ-X3-dCr">
                                         <rect key="frame" x="0.0" y="0.0" width="426" height="47"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -705,6 +653,95 @@ Apply Leave(s)</string>
                                         </subviews>
                                         <color key="backgroundColor" red="0.52601522840000003" green="0.26583712440000001" blue="0.4852760787" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mhf-As-xs6">
+                                        <rect key="frame" x="-2" y="45" width="431" height="702"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please discribe in detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2AC-zt-8lA">
+                                                <rect key="frame" x="61" y="530" width="154" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JQr-pL-qEz">
+                                                <rect key="frame" x="124" y="376" width="240" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LabID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erH-ul-1bk">
+                                                <rect key="frame" x="15" y="220" width="45" height="28"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Request Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVB-IM-S6t">
+                                                <rect key="frame" x="8" y="138" width="86" height="26"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y7h-BQ-Hw6">
+                                                <rect key="frame" x="131" y="136" width="211" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kyX-Nk-NC3">
+                                                <rect key="frame" x="131" y="219" width="211" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ah3-ZH-vFK">
+                                                <rect key="frame" x="131" y="308" width="211" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kU5-mc-ifJ">
+                                                <rect key="frame" x="0.0" y="0.0" width="440" height="109"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="2Ym-2B-cgS" id="9Yj-5p-NeK"/>
+                                                    <outlet property="delegate" destination="2Ym-2B-cgS" id="aha-Sa-d4Z"/>
+                                                </connections>
+                                            </pickerView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Seat num" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIf-ld-kYm">
+                                                <rect key="frame" x="8" y="310" width="58" height="26"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6I7-9A-RwA">
+                                                <rect key="frame" x="8" y="426" width="70" height="29"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kih-R0-apg">
+                                                <rect key="frame" x="107" y="559" width="63" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.17977100599977083" green="0.64756503807106602" blue="0.6395601625733166" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <state key="normal" title="Submit">
+                                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="submitButton:" destination="2Ym-2B-cgS" eventType="touchUpInside" id="gP1-H1-0h4"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </scrollView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -716,13 +753,17 @@ Apply Leave(s)</string>
                     </navigationItem>
                     <connections>
                         <outlet property="descriptionText" destination="JQr-pL-qEz" id="38K-mP-Eib"/>
+                        <outlet property="labIDText" destination="kyX-Nk-NC3" id="DIn-qU-ODQ"/>
                         <outlet property="menuButton" destination="dzc-QP-EfW" id="tlW-TB-Ld2"/>
+                        <outlet property="picker" destination="kU5-mc-ifJ" id="4Dc-dZ-ePv"/>
+                        <outlet property="requestText" destination="Y7h-BQ-Hw6" id="TzG-ix-skM"/>
                         <outlet property="scrollView" destination="Mhf-As-xs6" id="DSb-ma-SkM"/>
+                        <outlet property="seatNumText" destination="ah3-ZH-vFK" id="EVe-9S-hHH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hh7-Ns-ajM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1814" y="2128"/>
+            <point key="canvasLocation" x="1814" y="2009"/>
         </scene>
         <!--Attendence-->
         <scene sceneID="Nfj-1K-EPd">
@@ -789,7 +830,7 @@ Apply Leave(s)</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MJk-wx-fcj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-434" y="2128"/>
+            <point key="canvasLocation" x="-434" y="2009"/>
         </scene>
         <!--Updates-->
         <scene sceneID="vho-8P-RQy">
@@ -1012,7 +1053,7 @@ Apply Leave(s)</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tIq-QA-rI8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1126" y="2128"/>
+            <point key="canvasLocation" x="1089" y="2009"/>
         </scene>
         <!--Home-->
         <scene sceneID="yb2-tv-LxF">
@@ -1103,7 +1144,7 @@ Apply Leave(s)</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Sj-rD-nDn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1207" y="2128"/>
+            <point key="canvasLocation" x="-1207" y="2010"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="56h-db-Ogu">
@@ -1139,7 +1180,7 @@ Apply Leave(s)</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JyV-lA-TF5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1126" y="1333"/>
+            <point key="canvasLocation" x="1089" y="1333"/>
         </scene>
         <!--Attendence Details-->
         <scene sceneID="6bH-HW-q13">
@@ -1348,7 +1389,7 @@ Apply Leave(s)</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HIg-Do-mYR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="342" y="2128"/>
+            <point key="canvasLocation" x="342" y="2009"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="G65-tK-jc0">
@@ -1479,7 +1520,7 @@ Enter your registered e-mail address below to get your password to e-mail.
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F0O-2a-8G2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1164" y="-1208.5457271364319"/>
+            <point key="canvasLocation" x="892" y="-248"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="R5t-N9-EDe">
@@ -1497,7 +1538,7 @@ Enter your registered e-mail address below to get your password to e-mail.
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XmS-eC-y1N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="377" y="-350"/>
+            <point key="canvasLocation" x="196" y="-1004"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Tnz-Nd-h57">
@@ -1515,7 +1556,7 @@ Enter your registered e-mail address below to get your password to e-mail.
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="auw-Ia-S4M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-311" y="-350"/>
+            <point key="canvasLocation" x="-516" y="-1006"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="exh-l1-XB3">
@@ -1569,7 +1610,7 @@ Enter your registered e-mail address below to get your password to e-mail.
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NVO-04-RyV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1126" y="-350"/>
+            <point key="canvasLocation" x="892" y="-1005"/>
         </scene>
     </scenes>
     <resources>

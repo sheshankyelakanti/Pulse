@@ -14,6 +14,8 @@
 @interface AttendenceDetails ()
 {
     AppDelegate * AD;
+    NSInteger selectIndex;
+    NSInteger deSelectIndex;
 }
 
 @end
@@ -56,6 +58,30 @@
                             
     return cell;
 }
+
+//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    if ([indexPath compare:self.expandPath]==NSOrderedSame)
+//    {
+//        return 360;
+//    }
+//    return 40;
+//}
+//
+//-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    [tableView beginUpdates];
+//    if ([indexPath compare:self.expandPath]==NSOrderedSame)
+//    {
+//        self.expandPath=nil;
+//    }
+//    else
+//    {
+//        self.expandPath=indexPath;
+//    }
+//    [tableView endUpdates];
+//}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

@@ -30,7 +30,7 @@
         [self.menuButton setAction:@selector(revealToggle:)];
         [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     }
-    summary = [[NSMutableArray alloc]initWithObjects:@"Total Days",@"Working Days",@"Leaves",@"Absents",@"Days Attended",@"Updates Sent",@"Working Hours",@"Worked Hours",@"Overall Spent Summary",@"Worked Per day(Avg.Hrs)",@"Shortage Per day(Avg.Hrs)",@"Late to Office",@"Minimum Hrs Missed",@"Max Points",@"Points Earned",@"Your Performance Score", nil];
+    summary = [[NSMutableArray alloc]initWithObjects:@"Total Days",@"Working Days",@"Leaves",@"Absents",@"Days Attended",@"Updates Sent",@"Working Hours",@"Worked Hours",@"Overall Spent Summary",@"Worked Per day(Avg.Hrs)",@"Shortage Per day(Avg.Hrs)",@"Late to Office",@"Minimum Hrs Missed",@"Max Points",@"Points Earned",@"Your Score", nil];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -55,7 +55,4 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-
-
 @end
