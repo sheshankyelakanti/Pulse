@@ -34,7 +34,7 @@
         [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     }
     leave=@[@"Casual Leave",@"Sick Leave",@"Emergency Leave"];
-    self.pickerView.hidden=YES;
+//    self.pickerView.hidden=YES;
     self.from.datePickerMode = UIDatePickerModeDate;
     self.from.date = [NSDate date];
     [self.from addTarget:self action:@selector(dateFrom:) forControlEvents:UIControlEventValueChanged];
